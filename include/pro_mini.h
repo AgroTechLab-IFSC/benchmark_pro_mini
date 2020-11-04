@@ -1,7 +1,7 @@
 /**
- * @file benchmark.h
+ * @file pro_mini.h
  * @author Robson Costa (robson.costa@ifsc.edu.br)
- * @brief Energy consumption benchmark library.
+ * @brief Arduino Pro-Mini defines library.
  * @version 0.1.0
  * @since 2020-11-04 
  * @date 2020-11-04
@@ -13,16 +13,10 @@
  * without warranties or  conditions of any kind</em>, either express or implied. See the License for the specific language governing permissions 
  * and limitations under the License.
  */
-#ifndef __BENCHMARK_H__
-#define __BENCHMARK_H__
+#ifndef __PRO_MINI_H__
+#define __PRO_MINI_H__
 
-enum benchmark_mode_e{
-    BENCHMARK_MODE_0,
-    BENCHMARK_MODE_1,
-    BENCHMARK_MODE_2,
-    BENCHMARK_MODE_3,
-    BENCHMARK_MODE_4
-};
-
+#define TOTAL_DIO_PORTS             14
+#define TOTAL_ANALOG_INPUT_PORTS    6
 
 #endif
