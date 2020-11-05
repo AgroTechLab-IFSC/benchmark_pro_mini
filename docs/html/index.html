@@ -106,6 +106,29 @@ $(document).ready(function(){initNavTree('index.html',''); initResizable(); });
 <li>UART (serial) communication at 115200 baudrate (5 bytes);</li>
 </ul>
 </li>
+<li><b>MODE 2</b><ul>
+<li>Duty cycle: 100%</li>
+<li>Only 3 digital I/O are set to OUTPUT the rest are set to INPUT_PULLUP;</li>
+<li>All analogic port are set to LOW;</li>
+<li>Builtin LED off;</li>
+<li>add, sub, mult, div operations (1000 times);</li>
+<li>toggle 3 digital I/O ports; <br  />
+</li>
+<li>UART (serial) communication at 115200 baudrate (5 bytes);</li>
+<li>disable ADC;</li>
+<li>disable SPI;</li>
+</ul>
+</li>
+<li><b>MODE 3</b><ul>
+<li>MODE 2;</li>
+<li>CPU clock is reduced to 50% (8MHz);</li>
+</ul>
+</li>
+<li><b>MODE 4</b><ul>
+<li>MODE 2;</li>
+<li>CPU clock is reduced to 25% (4MHz);</li>
+</ul>
+</li>
 </ul>
 <p>The results obtained ar showed below:<br  />
  <img src="../results/results.png" alt="results" class="inline"/><br  />
