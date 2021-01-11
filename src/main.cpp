@@ -92,7 +92,7 @@
 #include "pro_mini.h"
 #include "benchmark.h"
 
-const uint8_t benchmark_mode = BENCHMARK_MODE_4;
+const uint8_t benchmark_mode = BENCHMARK_MODE_3;
 int64_t var_add, var_sub;
 double var_mult, var_div;
 float var_analog;

@@ -1,35 +1,17 @@
+//
+// !!! WARNING !!! AUTO-GENERATED FILE!
+// PLEASE DO NOT MODIFY IT AND USE "platformio.ini":
+// https://docs.platformio.org/page/projectconf/section_env_build.html#build-flags
+//
 {
     "configurations": [
         {
-            "name": "!!! WARNING !!! AUTO-GENERATED FILE, PLEASE DO NOT MODIFY IT AND USE https://docs.platformio.org/page/projectconf/section_env_build.html#build-flags"
-        },
-        {
-            "name": "Linux",
+            "name": "PlatformIO",
             "includePath": [
-                "/home/robson/GDrive/workspaces/agrotechlab/toolbox/benchmark_pro_mini/include",
-                "/home/robson/GDrive/workspaces/agrotechlab/toolbox/benchmark_pro_mini/src",
+                "/home/robson/GDrive/workspaces/agrotechlab/toolbox_exemplo/benchmark_pro_mini/include",
+                "/home/robson/GDrive/workspaces/agrotechlab/toolbox_exemplo/benchmark_pro_mini/src",
                 "/home/robson/.platformio/packages/framework-arduino-avr/cores/arduino",
                 "/home/robson/.platformio/packages/framework-arduino-avr/variants/eightanaloginputs",
-                "/home/robson/.platformio/lib/Adafruit ADXL343_ID6117",
-                "/home/robson/.platformio/lib/Adafruit BMP280 Library",
-                "/home/robson/.platformio/lib/Adafruit BusIO",
-                "/home/robson/.platformio/lib/Adafruit GFX Library",
-                "/home/robson/.platformio/lib/Adafruit ILI9341",
-                "/home/robson/.platformio/lib/Adafruit INA219_ID160",
-                "/home/robson/.platformio/lib/Adafruit NeoPixel",
-                "/home/robson/.platformio/lib/Adafruit SSD1306",
-                "/home/robson/.platformio/lib/Adafruit STMPE610_ID377",
-                "/home/robson/.platformio/lib/Adafruit TouchScreen",
-                "/home/robson/.platformio/lib/Adafruit Unified Sensor_ID31",
-                "/home/robson/.platformio/lib/ArduinoJson/src",
-                "/home/robson/.platformio/lib/BH1750_ID439/src",
-                "/home/robson/.platformio/lib/DHT sensor library",
-                "/home/robson/.platformio/lib/DHT sensor library_ID19@1.3.9",
-                "/home/robson/.platformio/lib/DallasTemperature",
-                "/home/robson/.platformio/lib/OneWire",
-                "/home/robson/.platformio/lib/OneWire_ID1",
-                "/home/robson/.platformio/lib/SparkFun_MMA8452Q_ID164/src",
-                "/home/robson/.platformio/lib/TinyGPSPlus_ID1655/src",
                 "/home/robson/.platformio/packages/framework-arduino-avr/libraries/EEPROM/src",
                 "/home/robson/.platformio/packages/framework-arduino-avr/libraries/HID/src",
                 "/home/robson/.platformio/packages/framework-arduino-avr/libraries/SPI/src",
@@ -41,30 +23,10 @@
             "browse": {
                 "limitSymbolsToIncludedHeaders": true,
                 "path": [
-                    "/home/robson/GDrive/workspaces/agrotechlab/toolbox/benchmark_pro_mini/include",
-                    "/home/robson/GDrive/workspaces/agrotechlab/toolbox/benchmark_pro_mini/src",
+                    "/home/robson/GDrive/workspaces/agrotechlab/toolbox_exemplo/benchmark_pro_mini/include",
+                    "/home/robson/GDrive/workspaces/agrotechlab/toolbox_exemplo/benchmark_pro_mini/src",
                     "/home/robson/.platformio/packages/framework-arduino-avr/cores/arduino",
                     "/home/robson/.platformio/packages/framework-arduino-avr/variants/eightanaloginputs",
-                    "/home/robson/.platformio/lib/Adafruit ADXL343_ID6117",
-                    "/home/robson/.platformio/lib/Adafruit BMP280 Library",
-                    "/home/robson/.platformio/lib/Adafruit BusIO",
-                    "/home/robson/.platformio/lib/Adafruit GFX Library",
-                    "/home/robson/.platformio/lib/Adafruit ILI9341",
-                    "/home/robson/.platformio/lib/Adafruit INA219_ID160",
-                    "/home/robson/.platformio/lib/Adafruit NeoPixel",
-                    "/home/robson/.platformio/lib/Adafruit SSD1306",
-                    "/home/robson/.platformio/lib/Adafruit STMPE610_ID377",
-                    "/home/robson/.platformio/lib/Adafruit TouchScreen",
-                    "/home/robson/.platformio/lib/Adafruit Unified Sensor_ID31",
-                    "/home/robson/.platformio/lib/ArduinoJson/src",
-                    "/home/robson/.platformio/lib/BH1750_ID439/src",
-                    "/home/robson/.platformio/lib/DHT sensor library",
-                    "/home/robson/.platformio/lib/DHT sensor library_ID19@1.3.9",
-                    "/home/robson/.platformio/lib/DallasTemperature",
-                    "/home/robson/.platformio/lib/OneWire",
-                    "/home/robson/.platformio/lib/OneWire_ID1",
-                    "/home/robson/.platformio/lib/SparkFun_MMA8452Q_ID164/src",
-                    "/home/robson/.platformio/lib/TinyGPSPlus_ID1655/src",
                     "/home/robson/.platformio/packages/framework-arduino-avr/libraries/EEPROM/src",
                     "/home/robson/.platformio/packages/framework-arduino-avr/libraries/HID/src",
                     "/home/robson/.platformio/packages/framework-arduino-avr/libraries/SPI/src",
@@ -75,7 +37,7 @@
                 ]
             },
             "defines": [
-                "PLATFORMIO=50002",
+                "PLATFORMIO=50004",
                 "ARDUINO_AVR_PRO",
                 "F_CPU=16000000L",
                 "ARDUINO_ARCH_AVR",
@@ -83,7 +45,6 @@
                 "__AVR_ATmega328P__",
                 ""
             ],
-            "intelliSenseMode": "clang-x64",
             "cStandard": "c11",
             "cppStandard": "c++11",
             "compilerPath": "/home/robson/.platformio/packages/toolchain-atmelavr/bin/avr-gcc",
