@@ -8,36 +8,34 @@
         {
             "name": "PlatformIO",
             "includePath": [
-                "c:/Users/rurez/Documents/AgroTechLab/Projetos/benchmark_pro_mini/include",
-                "c:/Users/rurez/Documents/AgroTechLab/Projetos/benchmark_pro_mini/src",
-                "C:/Users/rurez/.platformio/packages/framework-arduino-avr/cores/arduino",
-                "C:/Users/rurez/.platformio/packages/framework-arduino-avr/variants/eightanaloginputs",
-                "C:/Users/rurez/.platformio/packages/framework-arduino-avr/libraries/EEPROM/src",
-                "C:/Users/rurez/.platformio/packages/framework-arduino-avr/libraries/HID/src",
-                "C:/Users/rurez/.platformio/packages/framework-arduino-avr/libraries/SPI/src",
-                "C:/Users/rurez/.platformio/packages/framework-arduino-avr/libraries/SoftwareSerial/src",
-                "C:/Users/rurez/.platformio/packages/framework-arduino-avr/libraries/Wire/src",
-                "C:/Users/rurez/.platformio/packages/tool-unity",
+                "C:/AgroTechLab/Embedded/benchmark_pro_mini/include",
+                "C:/AgroTechLab/Embedded/benchmark_pro_mini/src",
+                "C:/Users/user/.platformio/packages/framework-arduino-avr/cores/arduino",
+                "C:/Users/user/.platformio/packages/framework-arduino-avr/variants/eightanaloginputs",
+                "C:/Users/user/.platformio/packages/framework-arduino-avr/libraries/EEPROM/src",
+                "C:/Users/user/.platformio/packages/framework-arduino-avr/libraries/HID/src",
+                "C:/Users/user/.platformio/packages/framework-arduino-avr/libraries/SPI/src",
+                "C:/Users/user/.platformio/packages/framework-arduino-avr/libraries/SoftwareSerial/src",
+                "C:/Users/user/.platformio/packages/framework-arduino-avr/libraries/Wire/src",
                 ""
             ],
             "browse": {
                 "limitSymbolsToIncludedHeaders": true,
                 "path": [
-                    "c:/Users/rurez/Documents/AgroTechLab/Projetos/benchmark_pro_mini/include",
-                    "c:/Users/rurez/Documents/AgroTechLab/Projetos/benchmark_pro_mini/src",
-                    "C:/Users/rurez/.platformio/packages/framework-arduino-avr/cores/arduino",
-                    "C:/Users/rurez/.platformio/packages/framework-arduino-avr/variants/eightanaloginputs",
-                    "C:/Users/rurez/.platformio/packages/framework-arduino-avr/libraries/EEPROM/src",
-                    "C:/Users/rurez/.platformio/packages/framework-arduino-avr/libraries/HID/src",
-                    "C:/Users/rurez/.platformio/packages/framework-arduino-avr/libraries/SPI/src",
-                    "C:/Users/rurez/.platformio/packages/framework-arduino-avr/libraries/SoftwareSerial/src",
-                    "C:/Users/rurez/.platformio/packages/framework-arduino-avr/libraries/Wire/src",
-                    "C:/Users/rurez/.platformio/packages/tool-unity",
+                    "C:/AgroTechLab/Embedded/benchmark_pro_mini/include",
+                    "C:/AgroTechLab/Embedded/benchmark_pro_mini/src",
+                    "C:/Users/user/.platformio/packages/framework-arduino-avr/cores/arduino",
+                    "C:/Users/user/.platformio/packages/framework-arduino-avr/variants/eightanaloginputs",
+                    "C:/Users/user/.platformio/packages/framework-arduino-avr/libraries/EEPROM/src",
+                    "C:/Users/user/.platformio/packages/framework-arduino-avr/libraries/HID/src",
+                    "C:/Users/user/.platformio/packages/framework-arduino-avr/libraries/SPI/src",
+                    "C:/Users/user/.platformio/packages/framework-arduino-avr/libraries/SoftwareSerial/src",
+                    "C:/Users/user/.platformio/packages/framework-arduino-avr/libraries/Wire/src",
                     ""
                 ]
             },
             "defines": [
-                "PLATFORMIO=50004",
+                "PLATFORMIO=60116",
                 "ARDUINO_AVR_PRO",
                 "F_CPU=16000000L",
                 "ARDUINO_ARCH_AVR",
@@ -45,9 +43,9 @@
                 "__AVR_ATmega328P__",
                 ""
             ],
-            "cStandard": "c11",
-            "cppStandard": "c++11",
-            "compilerPath": "C:/Users/rurez/.platformio/packages/toolchain-atmelavr/bin/avr-gcc.exe",
+            "cStandard": "gnu11",
+            "cppStandard": "gnu++11",
+            "compilerPath": "C:/Users/user/.platformio/packages/toolchain-atmelavr/bin/avr-gcc.exe",
             "compilerArgs": [
                 "-mmcu=atmega328p",
                 ""

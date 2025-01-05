@@ -12,3 +12,9 @@
 ![GitHub Downloads (all assets, all releases)](https://img.shields.io/github/downloads/agrotechlab-ifsc/benchmark_pro_mini/total)
 
 # Benchmark for Arduino Pro Mini
+
+**Benchmark for Arduino Pro Mini** is a IoT tool developed by <a href="https://agrotechlab.lages.ifsc.edu.br">AgroTechLab (*Technology Development Laboratory for Agribusiness*)</a> of <a href="https://www.ifsc.edu.br">IFSC (*Federal Institute of Santa Catarina*)</a>.
+
+It aims to get data about the energy consumption of Arduino Pro Mini in different operation modes. It can be used in conjunction with a power consumption analysis tool such as <a href="https://github.com/AgroTechLab-IFSC/power_monitor">Power Monitor</a>.
+
+More details can be found on the <a href="https://agrotechlab-ifsc.github.io/benchmark_pro_mini">Benchmark Arduino Pro Mini Documentation page</a>.
