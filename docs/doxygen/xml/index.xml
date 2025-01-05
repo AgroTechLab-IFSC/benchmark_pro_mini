@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.9.7" xml:lang="en-US">
+  <compound refid="main_8cpp" kind="file"><name>main.cpp</name>
+    <member refid="main_8cpp_1ab59b419b15a2d103143d5c88a3a1f7ad" kind="variable"><name>benchmark_mode</name></member>
+    <member refid="main_8cpp_1ae762331bac65d94f6c4d9f97b13915c8" kind="variable"><name>var_add</name></member>
+    <member refid="main_8cpp_1a3cf75ea0424780358abda3a601fdfe97" kind="variable"><name>var_sub</name></member>
+    <member refid="main_8cpp_1a64468581240af6adef1ae47bdaa2228c" kind="variable"><name>var_mult</name></member>
+    <member refid="main_8cpp_1a9f16645a18bbb5e16835dd9bc2dac704" kind="variable"><name>var_div</name></member>
+    <member refid="main_8cpp_1a505a5484fc38e9a95d547582f7c22212" kind="variable"><name>var_analog</name></member>
+    <member refid="main_8cpp_1a4fc01d736fe50cf5b977f755b675f11d" kind="function"><name>setup</name></member>
+    <member refid="main_8cpp_1afe461d27b9c48d5921c00d521181f12f" kind="function"><name>loop</name></member>
+  </compound>
+  <compound refid="dir_68267d1309a1af8e8297ef4c3efbcdba" kind="dir"><name>C:/AgroTechLab/Embedded/benchmark_pro_mini/src</name>
+  </compound>
+</doxygenindex>

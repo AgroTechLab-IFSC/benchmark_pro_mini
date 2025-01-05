@@ -1,0 +1,189 @@
+
+
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" data-content_root="./">
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Source Code Docs &mdash; Benchmark Arduino Pro Mini 0.1.0 documentation</title>
+      <link rel="stylesheet" type="text/css" href="_static/pygments.css?v=80d5e7a1" />
+      <link rel="stylesheet" type="text/css" href="_static/css/theme.css?v=e59714d7" />
+      <link rel="stylesheet" type="text/css" href="_static/graphviz.css?v=4ae1632d" />
+
+  
+      <script src="_static/jquery.js?v=5d32c60e"></script>
+      <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+      <script src="_static/documentation_options.js?v=01f34227"></script>
+      <script src="_static/doctools.js?v=9bcbadda"></script>
+      <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="prev" title="Hardware Requirements" href="hw_req.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="index.html" class="icon icon-home">
+            Benchmark Arduino Pro Mini
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Table of Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="authors_license.html">Authors and License</a></li>
+<li class="toctree-l1"><a class="reference internal" href="changelog.html">Changelog</a></li>
+<li class="toctree-l1"><a class="reference internal" href="hw_req.html">Hardware Requirements</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Source Code Docs</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#_CPPv45setupv"><code class="docutils literal notranslate"><span class="pre">setup()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="#_CPPv44loopv"><code class="docutils literal notranslate"><span class="pre">loop()</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="#_CPPv414benchmark_mode"><code class="docutils literal notranslate"><span class="pre">benchmark_mode</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="#_CPPv47var_add"><code class="docutils literal notranslate"><span class="pre">var_add</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="#_CPPv47var_sub"><code class="docutils literal notranslate"><span class="pre">var_sub</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="#_CPPv48var_mult"><code class="docutils literal notranslate"><span class="pre">var_mult</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="#_CPPv47var_div"><code class="docutils literal notranslate"><span class="pre">var_div</span></code></a></li>
+<li class="toctree-l2"><a class="reference internal" href="#_CPPv410var_analog"><code class="docutils literal notranslate"><span class="pre">var_analog</span></code></a></li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Benchmark Arduino Pro Mini</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">Source Code Docs</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/source_code_docs.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="source-code-docs">
+<h1>Source Code Docs<a class="headerlink" href="#source-code-docs" title="Link to this heading"></a></h1>
+<dl>
+<dt class="sig sig-object cpp">
+<span class="target" id="main_8cpp"></span><em><span class="pre">file</span></em> <span class="sig-name descname"><span class="pre">main.cpp</span></span></dt>
+<dd><div class="docutils container">
+<em>#include &lt;Arduino.h&gt;</em></div>
+<div class="docutils container">
+<em>#include &lt;limits.h&gt;</em></div>
+<div class="docutils container">
+<em>#include &lt;avr/power.h&gt;</em></div>
+<div class="docutils container">
+<em>#include “pro_mini.h”</em></div>
+<div class="docutils container">
+<em>#include “benchmark.h”</em></div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-functions">Functions</p>
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv45setupv">
+<span id="_CPPv35setupv"></span><span id="_CPPv25setupv"></span><span id="setup"></span><span class="target" id="main_8cpp_1a4fc01d736fe50cf5b977f755b675f11d"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">setup</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv45setupv" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp function">
+<dt class="sig sig-object cpp" id="_CPPv44loopv">
+<span id="_CPPv34loopv"></span><span id="_CPPv24loopv"></span><span id="loop"></span><span class="target" id="main_8cpp_1afe461d27b9c48d5921c00d521181f12f"></span><span class="kt"><span class="pre">void</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">loop</span></span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#_CPPv44loopv" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+</div>
+<div class="breathe-sectiondef docutils container">
+<p class="breathe-sectiondef-title rubric" id="breathe-section-title-variables">Variables</p>
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv414benchmark_mode">
+<span id="_CPPv314benchmark_mode"></span><span id="_CPPv214benchmark_mode"></span><span id="benchmark_mode__uint8_tC"></span><span class="target" id="main_8cpp_1ab59b419b15a2d103143d5c88a3a1f7ad"></span><span class="k"><span class="pre">const</span></span><span class="w"> </span><span class="n"><span class="pre">uint8_t</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">benchmark_mode</span></span></span><span class="w"> </span><span class="p"><span class="pre">=</span></span><span class="w"> </span><span class="n"><span class="pre">BENCHMARK_MODE_3</span></span><a class="headerlink" href="#_CPPv414benchmark_mode" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv47var_add">
+<span id="_CPPv37var_add"></span><span id="_CPPv27var_add"></span><span id="var_add__int64_t"></span><span class="target" id="main_8cpp_1ae762331bac65d94f6c4d9f97b13915c8"></span><span class="n"><span class="pre">int64_t</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">var_add</span></span></span><a class="headerlink" href="#_CPPv47var_add" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv47var_sub">
+<span id="_CPPv37var_sub"></span><span id="_CPPv27var_sub"></span><span id="var_sub__int64_t"></span><span class="target" id="main_8cpp_1a3cf75ea0424780358abda3a601fdfe97"></span><span class="n"><span class="pre">int64_t</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">var_sub</span></span></span><a class="headerlink" href="#_CPPv47var_sub" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv48var_mult">
+<span id="_CPPv38var_mult"></span><span id="_CPPv28var_mult"></span><span id="var_mult__double"></span><span class="target" id="main_8cpp_1a64468581240af6adef1ae47bdaa2228c"></span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">var_mult</span></span></span><a class="headerlink" href="#_CPPv48var_mult" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv47var_div">
+<span id="_CPPv37var_div"></span><span id="_CPPv27var_div"></span><span id="var_div__double"></span><span class="target" id="main_8cpp_1a9f16645a18bbb5e16835dd9bc2dac704"></span><span class="kt"><span class="pre">double</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">var_div</span></span></span><a class="headerlink" href="#_CPPv47var_div" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+<dl class="cpp var">
+<dt class="sig sig-object cpp" id="_CPPv410var_analog">
+<span id="_CPPv310var_analog"></span><span id="_CPPv210var_analog"></span><span id="var_analog__float"></span><span class="target" id="main_8cpp_1a505a5484fc38e9a95d547582f7c22212"></span><span class="kt"><span class="pre">float</span></span><span class="w"> </span><span class="sig-name descname"><span class="n"><span class="pre">var_analog</span></span></span><a class="headerlink" href="#_CPPv410var_analog" title="Link to this definition"></a><br /></dt>
+<dd></dd></dl>
+
+</div>
+</dd></dl>
+
+<dl>
+<dt class="sig sig-object cpp">
+<span class="target" id="dir_68267d1309a1af8e8297ef4c3efbcdba"></span><em><span class="pre">dir</span></em> <span class="sig-name descname"><span class="pre">C:/AgroTechLab/Embedded/benchmark_pro_mini/src</span></span></dt>
+<dd></dd></dl>
+
+<div class="toctree-wrapper compound" id="id1">
+</div>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="hw_req.html" class="btn btn-neutral float-left" title="Hardware Requirements" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright since 2021 - AgroTechLab.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
